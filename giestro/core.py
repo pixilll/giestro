@@ -165,7 +165,7 @@ class Giestro:
 def main():
     giestro = Giestro()
     if len(sys.argv) < 2:
-        giestro.console.print(Panel("usage: giestro <command> [args]", style="red"))
+        giestro.console.print(Panel("please provide a command, or run giestro help to see a list of commands.", style="red"))
     else:
         command = sys.argv[1].lower()
         try:

@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73c2d494-7a94-4de4-b926-10cc9f44475b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/giestro/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/giestro/__main__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/giestro/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/giestro/core.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
