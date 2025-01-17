@@ -45,7 +45,7 @@ class Giestro:
         with open(commit_message_path, "w") as f:
             f.write(message)
 
-        self.console.print(Panel(f"committed as {commit_id} with message: '{message}'\nrun giestro fetch {branch} {commit_id} to rollback to this point."))
+        self.console.print(Panel(f"committed as {commit_id} with message: '{message}'\nrun giestro load {branch} {commit_id} to rollback to this point."))
 
     def history(self, branch):
         try:
@@ -237,7 +237,7 @@ def main():
                     giestro.commit(sys.argv[2], " ".join(sys.argv[3:]))
                 case "history":
                     giestro.history(sys.argv[2])
-                case "get":
+                case "load":
                     giestro.rollback(sys.argv[2], sys.argv[3])
                 case "remove-commit":
                     giestro.remove(sys.argv[2], sys.argv[3])
@@ -254,7 +254,7 @@ def main():
                 case "fetch":
                     giestro.fetch(sys.argv[2])
                 case "help":
-                    print(f"commands: init, commit, history, get, remove-commit, branch, branches, remove-branch, merge, create-issues, list-issues, merge-request, fetch, help")
+                    print(f"commands: init, commit, history, load, remove-commit, branch, branches, remove-branch, merge, merge-request, fetch, help")
                 case _:
                     giestro.console.print(Panel(f"unknown command: {command}", style="red"))
         except IndexError:
