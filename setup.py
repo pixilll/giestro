@@ -15,7 +15,7 @@ setup(
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.12',
-    install_requires=[],
+    install_requires=['rich'],
     entry_points={
         'console_scripts': [
             'giestro=giestro.core:main'
